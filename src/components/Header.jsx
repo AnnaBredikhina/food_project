@@ -5,7 +5,7 @@ function Header() {
                 {/* eslint-disable-next-line  */}
                 <a href="/" className="brand-logo">React Food</a>
                 <ul id="nav-mobile" className="right hide-on-med-and-down">
-                    <li><a href="#">Repo</a></li>
+                    <li><a href="https://github.com/AnnaBredikhina/food_project">Repo</a></li>
                 </ul>
             </div>
         </nav>
