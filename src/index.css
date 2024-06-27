@@ -7,7 +7,134 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*-------------------- Навигация --------------------*/
+
+nav {
+  padding: 0 1.5rem;
+}
+
+/*-------------------- Главная --------------------*/
+
+main {
+  flex: 1 0 auto;
+}
+
+.content {
+  padding: 1rem 0;
+}
+
+.categories, .meals {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+/*-------------------- Карточка --------------------*/
+
+.card .card-content {
+  padding: 10px 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+/*-------------------- Подвал --------------------*/
+
+.page-footer {
+  padding-top: 0;
+}
+
+/*-------------------- Страница рецепта --------------------*/
+
+.recipe {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.recipe__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe__image-box {
+  max-width: 40%;
+  margin-right: 3rem;
+}
+
+.recipe__img {
+  width: 100%;
+}
+
+.recipe__info {
+  max-width: 60%;
+}
+
+.recipe__name {
+  margin-top: 0;
+}
+
+table {
+  margin: 1rem 0 2rem;
+}
+
+iframe {
+  width: 500px;
+  height: 300px;
+  max-width: 100%;
+}
+
+/*-------------------- Поиск --------------------*/
+
+.search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*-------------------- Медиа-запросы --------------------*/
+
+@media only screen and (max-width: 992px) {
+  .hide-on-med-and-down {
+    display: block !important;
+  }
+
+  nav .brand-logo {
+    left: unset;
+    transform: none;
+  }
+
+  .recipe__main {
+    display: block;
+  }
+
+  .recipe__image-box {
+    max-width: none;
+    margin-right: 0;
+  }
+
+  .recipe__info {
+    max-width: none;
+  }
+
+  .recipe__name {
+    margin-top: 2rem;
+  }
+
 }
