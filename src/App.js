@@ -10,7 +10,7 @@ import { NotFound } from "./pages/NotFound";
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/food_project">
         <Header />
         <main className="container content">
           <Routes>
